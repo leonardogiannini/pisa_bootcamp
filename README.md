@@ -1,8 +1,8 @@
 # Guessing the number of files
-## a game worth your time!!! :smile:
+## a game worth your time!!! ^_^
 
-generating this file on  2020-05-02 15:23:51 UTC
+generating this file on  2020-05-02 15:32:25 UTC
 
 not a short game: the file lines are 26
 
-see you next time :wave:
+see you next time -- Ciao!!! 
