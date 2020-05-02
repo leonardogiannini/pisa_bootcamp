@@ -24,34 +24,6 @@ function fff {
   echo "HAHAHA";
 }
 
-function fffi2 {
-  s1=":_:_:_:_:_:_:_:_:_:_:_\r"
-  s2="_:_:_:_:_:_:_:_:_:_:_:\r"
-  s3="-:-:-:-:-:-:-:-:-:-:-:\r"
-  s4="/:/:/:/:/:/:/:/:/:/:/:\r"
-  s5=":/:/:/:/:/:/:/:/:/:/:/\r"
-  
-
-  for i in $(seq 0 1 9)
-  do
-	  echo -ne $s1
-	  sleep 0.1
-	  echo -ne $s2
-	  sleep 0.1
-	  echo -ne $s1
-	  sleep 0.1
-	  echo -ne $s2
-	  sleep 0.1
-	  echo -ne $s1
-	  sleep 0.1
-	  echo -ne $s2
-	  echo ""
-	  
-  done
-}
-
-
-
 function fcounter {
   echo $(ls | wc -l);
 
@@ -71,13 +43,4 @@ do
 		aaa=0
 	fi
 done
-
-fff
-
-echo ""
-
-fffi2
-
-echo ""
-
 fff
