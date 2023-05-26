@@ -1,8 +1,5 @@
-# Project: "Guessing the number of files" 
-## a game worth your time!!! ^_^
+# Project: "Hit selection windows code" 
 
-generating this file on  2020-05-02 15:34:33 UTC
-
-not a short game: the file lines are 26
-
-see you next time -- Ciao!!! 
+1. apply the diff
+2. run the text dump as in the example
+3. continue
