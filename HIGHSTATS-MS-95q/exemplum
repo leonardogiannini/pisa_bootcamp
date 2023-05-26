@@ -1,0 +1,63 @@
+#mkdir txt histos graphs
+
+#python3 ana_histos.py
+
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-initialStep.json 4 initialStep 1
+
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-detachedQuadStep.json 24 detachedQuadStep 1
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-detachedTripletStep.json 7 detachedTripletStep 1
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-highPtTripletStep.json 22 highPtTripletStep 1
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-initialStep.json 4 initialStep 1
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-lowPtQuadStep.json 23 lowPtQuadStep 1
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-lowPtTripletStep.json 5 lowPtTripletStep 1
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-mixedTripletStep.json 8 mixedTripletStep 1
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-pixelLessStep.json 9 pixelLessStep 1
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-pixelPairStep.json 6 pixelPairStep 1
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-tobTecStep.json 10 tobTecStep 1
+
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-detachedQuadStep.json 24 detachedQuadStep 0
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-detachedTripletStep.json 7 detachedTripletStep 0
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-highPtTripletStep.json 22 highPtTripletStep 0
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-initialStep.json 4 initialStep 0
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-lowPtQuadStep.json 23 lowPtQuadStep 0
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-lowPtTripletStep.json 5 lowPtTripletStep 0
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-mixedTripletStep.json 8 mixedTripletStep 0
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-pixelLessStep.json 9 pixelLessStep 0
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-pixelPairStep.json 6 pixelPairStep 0
+python3 compare-json.py ../../RecoTracker-MkFit/mkfit-phase1-tobTecStep.json 10 tobTecStep 0
+
+mkdir detachedQuadStep
+mkdir detachedTripletStep
+mkdir highPtTripletStep
+mkdir initialStep
+mkdir lowPtQuadStep
+mkdir lowPtTripletStep
+mkdir mixedTripletStep
+mkdir pixelLessStep
+mkdir pixelPairStep
+mkdir tobTecStep
+
+mv *detachedQuadStep*png  detachedQuadStep
+mv *detachedTripletStep*png detachedTripletStep
+mv *highPtTripletStep*png highPtTripletStep
+mv *initialStep*png initialStep
+mv *lowPtQuad*png lowPtQuadStep
+mv *lowPtTriplet*png lowPtTripletStep
+mv *mixedTriplet*png mixedTripletStep
+mv *pixelLessStep*png pixelLessStep
+mv *pixelPairStep*png pixelPairStep
+mv *tobTecStep*png tobTecStep
+
+cp index.php txt
+cp index.php histos
+cp index.php graphs/
+cp index.php initialStep/
+cp index.php highPtTripletStep/
+cp index.php lowPtTripletStep/
+cp index.php lowPtQuadStep/
+cp index.php detachedQuadStep/
+cp index.php detachedTripletStep/
+cp index.php pixelLessStep/
+cp index.php pixelPairStep/
+cp index.php mixedTripletStep/
+cp index.php tobTecStep/
