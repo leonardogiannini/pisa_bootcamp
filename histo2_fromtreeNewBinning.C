@@ -129,7 +129,7 @@ void findDuplTracksEtc(char* filename= (char*)"file", char* folder= (char*)"boh"
         //if( dq<(dq_cut/5.) && dphi<(dphi_cut/5.) && chi2<200 && lyr_id==layers[l] && seed_algo==algos[g] && seed_mcid==hit_mcid && hit_mcid==trk_label) {
         //histo2_fromtreeRebin.C
         //about the windows analysis, I was thinking to suggest to use the closest hit if there are multiple hits in the same layer. Your example file points that these tails are predominantly from multiple hits.
-          if(!bkwd) {
+          if(bkwd) {
                        histos3d["3d-layerq_"+layerss[l]+"_"+algoss[g]]->Fill(invpt,theta,dq);
                        histos3d["3d-layerp_"+layerss[l]+"_"+algoss[g]]->Fill(invpt,theta,dphi);
                        histos3d["3d-layerc_"+layerss[l]+"_"+algoss[g]]->Fill(invpt,theta,chi2);
