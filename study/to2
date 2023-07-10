@@ -1,0 +1,27 @@
+mkdir occ histos graphs txt res examples
+python3 ana_histos_remake.py ../allhistos-bkfwd2.root
+cp index.php occ
+cp index.php graphs/
+cp index.php histos/
+cp index.php res
+cd res
+cp ../index.php .
+for i in {0..71}; do echo mkdir layer_$i "&&" mv '*'layer_$i'_*' layer_$i "&&" cp index.php  layer_$i;  done >> splitter
+source splitter
+for i in {0..71}; do cd layer_$i; 
+for i in $(ls *RESG*qua*); do mkdir ${i/RESG_95quantiles.png/Bins}; mv ${i/RESG_95quantiles.png/compareFitBin}* ${i/RESG_95quantiles.png/Bins}; cp index.php ${i/RESG_95quantiles.png/Bins}; done; cd ..; done
+cd ..
+cd histos
+for i in {0..71}; do echo mkdir layer_$i "&&" mv '*'layer_$i'_*' layer_$i "&&" cp index.php  layer_$i;  done >> splitter
+source splitter
+cd ..
+cd occ
+for i in {0..71}; do echo mkdir layer_$i "&&" mv '*'layer_$i'_*' layer_$i "&&" cp index.php  layer_$i;  done >> splitter
+source splitter
+cd ..
+cd graphs
+for i in {0..71}; do echo mkdir layer_$i "&&" mv '*'layer_$i'_*' layer_$i "&&" cp index.php  layer_$i;  done >> splitter
+source splitter
+cd ..
+mkdir ALLSamples-withCutMore-reso2
+mv occ/ res graphs/ histos/ examples/ ALLSamples-withCutMore-reso2
