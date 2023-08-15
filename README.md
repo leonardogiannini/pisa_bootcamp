@@ -12,6 +12,7 @@
    ```
    - make sure you the have the commit https://github.com/trackreco/cmssw/pull/130/commits/e10bc031574cf7e36a5e6007fe6df98ba85816cf
    - add other changes at this point (material/PR127/...)
+   - if the Geometry binary file doesn't match you can remake it with RecoTracker/MkFit/test/dumpMkFitGeometry.py and move it to standalone/CMS-phase1.bin
    - add the line below to RecoTracker/MkFitCore/interface/Config.h 
     
    ``` 
